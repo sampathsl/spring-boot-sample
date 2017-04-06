@@ -24,13 +24,13 @@ public class Employee implements java.io.Serializable {
 	@Column(name = "id", unique = true, nullable = false)
 	private Long id;
 
-	@Column(name = "firstname", length = 50)
+	@Column(name = "firstname", length = 100)
 	private String firstname;
 
-	@Column(name = "lastname", length = 50)
+	@Column(name = "lastname", length = 100)
 	private String lastname;
 
-	@Column(name = "designation", length = 20)
+	@Column(name = "designation", length = 50)
 	private String designation;
 
 	@Column(name = "salary")

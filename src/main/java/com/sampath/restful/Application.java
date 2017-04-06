@@ -2,6 +2,8 @@ package com.sampath.restful;
 
 import java.util.Arrays;
 
+import org.h2.server.web.WebServlet;
+
 /**
  * 
  * @author SAMPATH
@@ -12,10 +14,17 @@ import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.boot.web.servlet.ServletRegistrationBean;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.core.io.ClassPathResource;
+import org.springframework.core.io.Resource;
+import org.springframework.jdbc.datasource.DriverManagerDataSource;
+import org.springframework.jdbc.datasource.init.DatabasePopulator;
+import org.springframework.jdbc.datasource.init.DatabasePopulatorUtils;
+import org.springframework.jdbc.datasource.init.ResourceDatabasePopulator;
 
 @Configuration
 @ComponentScan({"com.sampath.restful"})
@@ -40,6 +49,29 @@ public class Application {
             }
 
         };
+    }
+    
+    @Bean
+    public ServletRegistrationBean h2servletRegistration() {
+        ServletRegistrationBean registration = new ServletRegistrationBean(new WebServlet());
+        registration.addUrlMappings("/console/*");
+        return registration;
+    }
+    
+    @Bean(name = "dataSource")
+    public DriverManagerDataSource dataSource() {
+        DriverManagerDataSource dataSource = new DriverManagerDataSource();
+        dataSource.setDriverClassName("org.h2.Driver");
+        dataSource.setUrl("jdbc:h2:~/myDB;MV_STORE=false");
+        dataSource.setUsername("sa");
+        dataSource.setPassword("");
+
+        // schema init
+        Resource initData = new ClassPathResource("/data.sql");
+        DatabasePopulator databasePopulator = new ResourceDatabasePopulator(initData);
+        DatabasePopulatorUtils.execute(databasePopulator, dataSource);
+
+        return dataSource;
     }
 
 }
