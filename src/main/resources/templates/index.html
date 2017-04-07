@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head lang="en">
+    <title>Spring Framework Guru</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <link href='../static/css/style.css' th:href="@{css/style.css}" rel="stylesheet" type="text/css" media="screen"/>
+    <link href='../static/css/map.css' th:href="@{css/map.css}" rel="stylesheet" type="text/css" media="screen"/>
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+	<script type="text/javascript" src="./js/app.js"></script>
+</head>
+<body>
+	<div style="max-width: 600px; margin: auto;">
+		<div id='map-container'></div>
+		<script src="./js/raphael-min.js"></script>
+		<script src="./js/settings.js"></script>
+		<script src="./js/map.js"></script>
+		<script>
+		
+		/* $.ajax({
+			  type : 'GET',
+			  url : "/region/info",
+			  cache : false,
+			  success : function(data) {
+				  
+				  //var dataObj = $.parseJSON(JSON.stringify(data));
+				  
+				  var map_cfg = {
+
+							mapWidth : "100%",
+							// mapWidth : 620,
+							mapHeight : "100%",
+
+							shadowWidth : 2,
+							shadowOpacity : 0.2,
+							shadowColor : "black",
+							shadowX : 0,
+							shadowY : 0,
+
+							iPhoneLink : true,
+
+							isNewWindow : false,
+
+							zoomEnable : true,
+							zoomEnableControls : true,
+							zoomMax : 8,
+							zoomStep : 0.8,
+
+							borderColor : "#ffffff",
+							borderColorOver : "#ffffff",
+
+							nameColor : "#ffffff",
+							nameColorOver : "#ffffff",
+							nameFontSize : "10px",
+							nameFontWeight : "bold",
+							nameStroke : true,
+
+							overDelay : 3000,
+
+							map_data : data
+						};
+				  
+				  loadMap(map_cfg);
+				  
+			  }
+		}); */
+		
+		/* function loadMap(map_cfg) {
+			var map = new FlaMap(map_cfg);
+			map.drawOnDomReady('map-container');
+		}  */
+		
+		var map = new FlaMap(map_cfg);
+		map.drawOnDomReady('map-container');
+
+		</script>
+	</div>
+</body>
+</html>
