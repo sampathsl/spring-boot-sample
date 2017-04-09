@@ -4,11 +4,11 @@ CREATE TABLE employee (id bigint auto_increment,firstname VARCHAR(100),lastname 
 
 CREATE TABLE regionpolicyinfo (id bigint auto_increment,regioncode VARCHAR(25) NOT NULL,totalcount bigint,stcount bigint,amtcount bigint,urv bigint,ukg bigint,astrenska bigint,cigna bigint,erv bigint,minprice bigint,maxprice bigint);
 
-INSERT INTO RegionPolicyInfo  (regionCode,totalCount,stCount,amtCount,urv,ukg,astrenska,cigna,erv,minPrice,maxPrice) VALUES  ('AB',78,61,17,20,17,13,22,3,5.0706,2771.875225);
-INSERT INTO RegionPolicyInfo  (regionCode,totalCount,stCount,amtCount,urv,ukg,astrenska,cigna,erv,minPrice,maxPrice) VALUES  ('AL',67,55,12,14,5,11,19,6,6.982107,1299.64765);
-INSERT INTO RegionPolicyInfo  (regionCode,totalCount,stCount,amtCount,urv,ukg,astrenska,cigna,erv,minPrice,maxPrice) VALUES  ('B',437,328,109,151,62,82,64,20,4.915013,1894.8978);
-INSERT INTO RegionPolicyInfo  (regionCode,totalCount,stCount,amtCount,urv,ukg,astrenska,cigna,erv,minPrice,maxPrice) VALUES  ('BA',82,59,23,21,14,13,25,4,11.925747,1418.032005);
-INSERT INTO RegionPolicyInfo  (regionCode,totalCount,stCount,amtCount,urv,ukg,astrenska,cigna,erv,minPrice,maxPrice) VALUES  ('BB',150,100,50,57,19,23,33,10,7.475949,1444.707634);
+INSERT INTO RegionPolicyInfo  (regionCode,totalCount,stCount,amtCount,urv,ukg,astrenska,cigna,erv,minPrice,maxPrice) VALUES  ('AB',70,61,16,19,16,8,22,3,6.0706,4441.875225);
+INSERT INTO RegionPolicyInfo  (regionCode,totalCount,stCount,amtCount,urv,ukg,astrenska,cigna,erv,minPrice,maxPrice) VALUES  ('AL',67,55,12,14,5,11,19,6,7.982107,459.64765);
+INSERT INTO RegionPolicyInfo  (regionCode,totalCount,stCount,amtCount,urv,ukg,astrenska,cigna,erv,minPrice,maxPrice) VALUES  ('B',437,328,109,151,62,82,64,9,4.915013,1454.8978);
+INSERT INTO RegionPolicyInfo  (regionCode,totalCount,stCount,amtCount,urv,ukg,astrenska,cigna,erv,minPrice,maxPrice) VALUES  ('BA',82,59,23,21,14,13,25,4,19.925747,1418.032005);
+INSERT INTO RegionPolicyInfo  (regionCode,totalCount,stCount,amtCount,urv,ukg,astrenska,cigna,erv,minPrice,maxPrice) VALUES  ('BB',150,100,50,57,19,23,33,10,3.475949,1444.707634);
 INSERT INTO RegionPolicyInfo  (regionCode,totalCount,stCount,amtCount,urv,ukg,astrenska,cigna,erv,minPrice,maxPrice) VALUES  ('BD',172,115,57,53,30,30,31,10,7.828002,2825.029173);
 INSERT INTO RegionPolicyInfo  (regionCode,totalCount,stCount,amtCount,urv,ukg,astrenska,cigna,erv,minPrice,maxPrice) VALUES  ('BH',203,156,47,57,23,37,51,8,4.810036,3104.850272);
 INSERT INTO RegionPolicyInfo  (regionCode,totalCount,stCount,amtCount,urv,ukg,astrenska,cigna,erv,minPrice,maxPrice) VALUES  ('BL',72,50,22,28,7,14,10,2,3.686115,1333.126301);

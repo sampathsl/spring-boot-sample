@@ -327,9 +327,9 @@
 			"name": "Greater London",
 			"shortname": "Greater London",
 			"link": "",
-			"comment": "Single Trip Policy Count : 0<br>Annual Trip Policy Count : 0<br>Total Policy Count : 0<br>URV\tPolicy Count : 0<br>UKG\tPolicy Count : 0<br>ASTRESKA\tPolicy Count : 0<br>\tCIGNA\tPolicy Count : 0<br>\tERV\tPolicy Count : 0<br>Min Policy Price: £0<br>Max Policy Price: £0",
+			"comment": "Single Trip Policy Count : 1048<br>Annual Trip Policy Count : 323<br>Total Policy Count : 1371<br>URV	Policy Count : 348<br>UKG	Policy Count : 189<br>ASTRESKA	Policy Count : 237<br>	CIGNA	Policy Count : 349<br>	ERV	Policy Count : 92<br>Min Policy Price: £3<br>Max Policy Price: £3451",
 			"image": "",
-			"color_map": "#CCCCFF",
+			"color_map": "#00009C",
 			"color_map_over": "#bf92b4"
 		},
 		"st13": {
