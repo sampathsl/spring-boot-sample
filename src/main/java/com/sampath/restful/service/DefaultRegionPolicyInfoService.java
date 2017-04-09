@@ -6,7 +6,6 @@ import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.sampath.restful.model.Employee;
 import com.sampath.restful.model.RegionPolicyInfo;
 import com.sampath.restful.repository.RegionPolicyInfoRepository;
 

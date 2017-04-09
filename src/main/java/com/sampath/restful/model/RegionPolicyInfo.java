@@ -10,8 +10,6 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
-import org.mockito.internal.progress.IOngoingStubbing;
-
 @Entity
 @Table(name = "regionpolicyinfo")
 public class RegionPolicyInfo implements Serializable {
